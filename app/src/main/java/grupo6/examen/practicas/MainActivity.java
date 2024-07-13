@@ -1,17 +1,13 @@
 package grupo6.examen.practicas;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-
 import grupo6.examen.practicas.model.Alumno;
 import grupo6.examen.practicas.model.AlumnoDao;
 import grupo6.examen.practicas.model.Curso;

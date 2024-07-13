@@ -45,7 +45,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textNombreCurso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nombre del Curso"

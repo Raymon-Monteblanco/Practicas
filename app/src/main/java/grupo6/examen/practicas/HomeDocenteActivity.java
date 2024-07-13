@@ -3,16 +3,15 @@ package grupo6.examen.practicas;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import grupo6.examen.practicas.model.Curso;
 
 public class HomeDocenteActivity extends AppCompatActivity {
@@ -49,9 +48,9 @@ public class HomeDocenteActivity extends AppCompatActivity {
         executor.execute(new Runnable() {
             @Override
             public void run() {
-                // Aquí obtienes la lista de cursos desde la base de datos o donde los hayas guardado
-                // Aquí se muestra un ejemplo de cómo obtener la instancia de la base de datos y los cursos
-                AppDatabase db = AppDatabase.getInstance(HomeDocenteActivity.this);
+                // Aquí obtienes la lista de cursos desde la base de datos
+                AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                        AppDatabase.class, "database-name").build();
                 final List<Curso> cursos = db.cursoDao().getAll();
 
                 // Actualizar el adaptador con los cursos obtenidos en el hilo principal
