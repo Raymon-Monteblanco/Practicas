@@ -53,4 +53,24 @@
         android:gravity="center"
         android:textSize="25sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="?attr/colorPrimary"
+        android:textColorLink="?attr/colorPrimary"
+        android:textCursorDrawable="?attr/colorPrimary"></EditText>
+
+    <Button
+        android:id="@+id/btnGenerar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generar" />
+    
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ImageView>
 </LinearLayout>

@@ -54,6 +54,17 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btn_generarQR"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:text="Generar código QR" />
+
+    <Button
+        android:id="@+id/btn_editarAsistencia"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:text="Editar asistencia" />
 
 
 </LinearLayout>

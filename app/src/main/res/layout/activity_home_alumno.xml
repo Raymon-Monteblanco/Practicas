@@ -119,13 +119,23 @@
 
     <Button
         android:id="@+id/escanear_qr"
-        android:layout_width="283dp"
-        android:layout_height="335dp"
+        android:layout_width="282dp"
+        android:layout_height="283dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="216dp"
-        android:onClick="escanear_qr"
         android:text="ESCANEAR QR DE CLASE"
         android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="515dp"
+        android:ems="10"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

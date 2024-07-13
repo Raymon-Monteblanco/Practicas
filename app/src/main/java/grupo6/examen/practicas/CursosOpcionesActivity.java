@@ -1,6 +1,8 @@
 package grupo6.examen.practicas;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CursosOpcionesActivity extends AppCompatActivity {
